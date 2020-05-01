@@ -17,7 +17,7 @@ By this web-app we try to minimize the movement of poeple by providing them a pl
 - Authorities can maintain a database of patients though this app and mark them positive/negative according to apps.
 
 ### Screenshot
-![Screenshot (325)](https://user-images.githubusercontent.com/40329238/79433122-5f875180-7fea-11ea-8795-4949e36be52b.png)
+![Screenshot (377)](https://user-images.githubusercontent.com/40329238/80818294-864fa580-8bf0-11ea-97e2-de5f954a350b.png)
 ![Screenshot (326)](https://user-images.githubusercontent.com/40329238/79433141-6615c900-7fea-11ea-9973-89c54c6bd229.png)
 ![Screenshot (321)](https://user-images.githubusercontent.com/40329238/79433213-78900280-7fea-11ea-96a1-96e4c5ea67de.png)
 ![Screenshot (322)](https://user-images.githubusercontent.com/40329238/79433233-7ded4d00-7fea-11ea-842e-bbb5625d2115.png)
