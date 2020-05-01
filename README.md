@@ -16,4 +16,5 @@ By this web-app we try to minimize the movement of poeple by providing them a pl
 - Wait, you can even register your store or search nearby stores to this amazing app.
 - Authorities can maintain a database of patients though this app and mark them positive/negative according to apps.
 
-
+### How to Run
+- Clone the repository using
