@@ -17,4 +17,25 @@ By this web-app we try to minimize the movement of poeple by providing them a pl
 - Authorities can maintain a database of patients though this app and mark them positive/negative according to apps.
 
 ### How to Run
-- Clone the repository using
+- Clone the Repository using command 
+
+```bash
+
+git clone https://github.com/TECH-E-SOULS/VIT-Hackathon.git
+
+```
+
+- then
+
+```bash
+
+cd VIT-Hackathon
+
+```
+- open CMD and install dependencies using 
+
+```bash
+
+npm install && cd stats && npm install && ng build --prod && cd ..
+
+```
