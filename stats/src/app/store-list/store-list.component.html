@@ -1,0 +1,94 @@
+<div class="main">
+  <app-navbar></app-navbar>
+  <div id="boxes">
+    <div class="leftbox">
+      <img src="../../assets/images/doctor-manlist.svg" class="image">
+    </div>
+    <div class="middlebox">
+      <h2 style="text-align: center; margin-top: 20px;"><span style="color: #f56133;">Stores</span> Near You</h2>
+      <h6 class="text-center">Your city : <span style="color: #f56133;">{{city}}?</span><span class="city" (click)="entercity=true" *ngIf="!entercity">Enter City</span><input class="cityInput" *ngIf="entercity" [(ngModel)]="newcity">&nbsp;<button class="cityButton" style="background-color: #f56133; border: 0ch;border-radius: 5px; color: white;width:5em;height:2.3em" *ngIf="entercity" (click)="entercityname()">Enter</button></h6>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Owner Contact</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">GMap Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let store of storelist.stores">
+            <th scope="row" *ngIf="store.city == city">{{store.name}}</th>
+            <td *ngIf="store.city == city">{{store.category}}</td>
+            <td *ngIf="store.city == city">{{store.contactno}}</td>
+            <td *ngIf="store.city == city">{{store.city}}</td>
+            <td *ngIf="store.city == city">{{store.state}}</td>
+            <td *ngIf="store.city == city">
+              <a *ngIf="store.address" style="background-color: #f56133; border: 0ch;" class="btn btn-primary"
+                href={{store.address}}>Visit
+                Store</a>
+              <p *ngIf="!store.address" class="text-center">N/A</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <p class="text-center">Not available in your city? Want to add a store to list? <a style=" color: #f56133;"
+          routerLink="/addStore">Add
+          here</a>
+        <br>
+        <a style="color: #f56133; cursor: pointer;" data-toggle="modal" data-target="#myModal">See all stores over
+          India.</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="classInfo"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            ×
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Owner Contact</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">GMap Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let store of storelist.stores">
+                <th scope="row">{{store.name}}</th>
+                <td>{{store.category}}</td>
+                <td>{{store.contactno}}</td>
+                <td>{{store.city}}</td>
+                <td>{{store.state}}</td>
+                <td>
+                  <a *ngIf="store.address" style="background-color: #f56133; border: 0ch;" class="btn btn-primary"
+                    href={{store.address}}>Visit
+                    Store</a>
+                  <p *ngIf="!store.address" class="text-center">N/A</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal"
+            style="background-color: #f56133; width: 100%;">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

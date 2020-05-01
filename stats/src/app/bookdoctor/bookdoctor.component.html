@@ -1,0 +1,78 @@
+<div class="nav-cont">
+    <app-navbar></app-navbar>
+</div>
+<div id="gc-main">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="box-big">
+                <h2 style="text-align: center; margin-top: 20px;">Dispose<span style="color: #f56133;">
+                        Waste</span>
+                </h2>
+                <hr>
+                <form class="text-center">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="namee" placeholder="What's your name?" [(ngModel)]="patient.name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="contactnum" placeholder="What's your contact number?" [(ngModel)]="patient.contactnum" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="address" placeholder="What's your Address?" [(ngModel)]="patient.address">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" rows="5" class="form-control" placeholder="What type of Medical Waste you have? E.g., (Infectious Waste, Pathological waste, Sharps waste, Chemical waste, Pharmaceutical waste, Cyctotoxic waste, Radioactive waste and Non-hazardous waste)"
+                            [(ngModel)]="patient.symptoms" name="symptoms"></textarea>
+                    </div>
+                    <button style="margin-top: 10px; background-color: #f56133; border: 0ch; width: 80%;" class="btn btn-primary mx-auto " (click)="submitform()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="small-boxes top-box">
+                <h2 style="text-align: center; margin-top: 20px;"><span style="color: #f56133;">When to
+                        seek </span>Medical Attention
+                </h2>
+                <hr>
+                <div class="row text-center mx-auto">
+                    <div class="col-md-4">
+                        <img src="../../assets/images/home/symptom1.png" width="100%">
+                        <p>Breathing Problem</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../assets/images/home/symptom2.png" width="100%">
+                        <p>Dry Cough</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../assets/images/home/symptom3.png" width="100%">
+                        <p>High Fever</p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-boxes bottom-box">
+                <h2 style="text-align: center; margin-top: 20px;"><span style="color: #f56133;">HelpLine </span>Numbers
+                </h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-5 mx-auto text-center">
+                        <img src="../../assets/images/call.png" alt="">
+                    </div>
+
+
+                    <div class="col-md-7 text-center mx-auto helplinecol " *ngIf="states">
+                        <select class="form-control" (change)="changenum($event)">
+                            <option selected disabled>Choose your region</option>
+                            <option *ngFor="let state of states.regional" value="{{state.number}}">
+                                {{state.loc}}</option>
+                        </select>
+                        <p class="statenumber" style="color: #f56133;">{{currentnum}}</p>
+                        <p>Primary Number : <span style="color: #f56133; font-weight: 500;">{{states.primary.number}}</span>
+                        </p>
+                        <p>Primary Email : <span style="color: #f56133; font-weight: 500;">{{states.primary.email}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

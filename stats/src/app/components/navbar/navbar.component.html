@@ -1,0 +1,68 @@
+<div class="notifs">
+    <div class="notiflines">Stay Home, Stay Lives</div>
+    <div class="notiflines">Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub </div>
+    <div class="notiflines">Stay home and self-isolate from others in the household if you feel unwell</div>
+    <div class="notiflines">Don't touch your eyes, nose, or mouth if your hands are not clean</div>
+    <div class="notiflines">If you have fever, cough and difficulty breathing, seek medical care early</div>
+    <div class="notiflines">Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" routerLink="/"><img src="../../../assets/images/Logo.png" width="110px"></a>
+    <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item special">
+                <div id="google_translate_element"></div>
+            </li>-->
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/stats" routerLinkActive="active">Statistics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/consultDoctor" routerLinkActive="active">Dispose Waste</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/stores" routerLinkActive="active">Stores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login" routerLinkActive="active">AdminPanel</a>
+            </li>
+            <li class="nav-item" *ngIf="userisloggedin">
+                <a class="nav-link" (click)="logout()">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img src="../../../assets/images/Logo.png" style="width: 70px; height: 70px;" alt="GoCO">
+    </a>
+  </div>
+  <div class="navbar-end">
+
+    <a class="navbar-item active" routerLink="/">
+      Home
+    </a>
+
+    <a class="navbar-item" routerLink="statastics">
+      Statastics
+    </a>
+    <a class="navbar-item" routerLink="doctordashboard">
+      Doctor
+    </a>
+    <a class="navbar-item" routerLink="store-regestration">
+      Groceries
+    </a>
+
+  </div>
+</nav> -->

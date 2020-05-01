@@ -1,0 +1,80 @@
+.main {
+    background-image: url(../../assets/images/regester_.png);
+    height: 120vh;
+    background-repeat: no-repeat;
+}
+
+.leftbox {
+    float: left;
+
+    width: 25%;
+    height: 280px;
+}
+
+.image {
+    height: 90vh;
+    margin-top: 9%;
+    margin-left: 25%;
+}
+.middlebox {
+    float: left;
+    background: white;
+    width: 50%;
+    margin-left: 15vw;
+    margin-top: 10px;
+    box-shadow: 1px 8px 20px grey;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(216, 85, 45);
+    box-shadow: 7px 5px 3px 4px rgba(189, 140, 126, 0.226);
+}
+
+.reg-form {
+    padding: 60px;
+    width: 50vw;
+    align-self: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1060px) {
+    .main {
+        background-image: url(../../assets/images/ipad-bg-1.png);
+        width: 100vw;
+    }
+    .image {
+        display: none;
+    }
+    .middlebox {
+        margin: auto;
+        margin-top: 40px;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .main {
+        background-image: url(../../assets/images/ipad-bg-1.png);
+        width: 100vw;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .middlebox {
+        width: 97%;
+        height: 100%;
+        margin: auto;
+        margin-left: 4px;
+        margin-bottom: 40px;
+    }
+
+    .leftbox {
+        display: none;
+    }
+
+    .reg-form {
+        padding: 20px;
+        width: auto;
+    }
+}
