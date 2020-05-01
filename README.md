@@ -19,6 +19,5 @@ By this web-app we try to minimize the movement of poeple by providing them a pl
 ### Screenshot
 ![Screenshot (377)](https://user-images.githubusercontent.com/40329238/80818294-864fa580-8bf0-11ea-97e2-de5f954a350b.png)
 ![Screenshot (326)](https://user-images.githubusercontent.com/40329238/79433141-6615c900-7fea-11ea-9973-89c54c6bd229.png)
-![Screenshot (322)](https://user-images.githubusercontent.com/40329238/79433233-7ded4d00-7fea-11ea-842e-bbb5625d2115.png)
 ![Screenshot (323)](https://user-images.githubusercontent.com/40329238/79433255-847bc480-7fea-11ea-8cd7-1fff34a579c1.png)
 ![Screenshot (324)](https://user-images.githubusercontent.com/40329238/79433300-8e9dc300-7fea-11ea-8fcf-39a90e8fc83d.png)
